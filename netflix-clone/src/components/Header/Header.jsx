@@ -1,6 +1,10 @@
-import React from "react";
+// import React from "react";
 import "./header.css";
-import Nlogo from "../../assets/images/Nlogo.png"
+import Nlogo from "../../assets/images/Nlogo.png";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Header = () => {
   return (
@@ -9,7 +13,9 @@ const Header = () => {
         <div className="header_container">
           <div className="header_left">
             <ul>
-              <li> <img src={Nlogo} alt="Netflix Logo" width = "100"/></li>
+              <li>
+                <img src={Nlogo} alt="Netflix Logo" width="100" />
+              </li>
               <li>Home</li>
               <li>TvShows</li>
               <li>Movies</li>
@@ -18,12 +24,19 @@ const Header = () => {
               <li>Browse by Languages</li>
             </ul>
           </div>
-        <div className= "header_right"> 
-        <ul>
-            {/* <li><searchI</li> */}
-            <li></li>
-            <li></li>
-        </ul>
+          <div className="header_right">
+            <ul>
+              <li>
+                <SearchIcon />
+              </li>
+              <li>
+                <NotificationsNoneIcon />
+              </li>
+              <li><AccountBoxIcon/></li>
+              <li><ArrowDropDownIcon/></li> 
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
