@@ -1,6 +1,7 @@
-// import { AppBar } from "@mui/material";
+import { AppBar } from "@mui/material";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+// eslint-disable-next-line no-undef
+const API_KEY = import.meta.env.VITE_API_KEY;
 const requests ={
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&laguage-en-US`,
     fetchNetflixOriginals:`/discover/tv?api_key=${API_KEY}&with_networks=213`,
