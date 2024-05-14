@@ -27,7 +27,7 @@ Before running the project, you'll need to have the following prerequisites inst
 To get started with the Netflix clone project, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/feven2552/netflix-clone.git
 2. Navigate to the project directory:
 cd netflix-clone
 3.Install the dependencies:
